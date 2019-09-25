@@ -134,3 +134,79 @@ html,
 body {
   height: 100%;
 }
+.brandText {
+  color: dodgerblue;
+}
+.lrFlex {
+  display: flex;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container h2 {
+  font: 2rem;
+}
+.container .navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+.container .navigation a {
+  color: dodgerblue;
+  padding: 25px;
+  text-decoration: none;
+}
+.container .intro {
+  width: 80%;
+  margin-left: 10%;
+  color: dodgerblue;
+}
+.container .intro img {
+  border-radius: 20%;
+  max-width: 30%;
+  height: auto;
+}
+.container .lrstack {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-left: 10%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .skills {
+  display: flex;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+}
+.container .history {
+  display: flex;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+  padding-left: 10px;
+}
+.container hr {
+  width: 80%;
+}
+.container .contact {
+  width: 20%;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

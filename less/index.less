@@ -53,7 +53,103 @@ table {
     box-sizing: border-box;
 }
 
+@content-box:	grey;
+@font-color:	dodgerblue;
+font-family: 'EB Garamond', serif;
+
+
 html, body {
 	height: 100%;
 }
 
+.brandText {
+	color: @font-color;
+}
+
+.lrFlex {
+	display:flex;
+	vertical-align:middle;
+	text-align:left;
+	width:50%;
+}
+
+
+.container {
+
+	@media (max-width: 500px){
+		width:100%;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font: 2rem;
+	}
+
+	.navigation {
+		display:flex;
+		align-items:center;
+		width:100%;
+		flex-wrap:wrap;
+		justify-content: flex-end;
+		padding-right: 10%;
+
+		a {
+			color:@font-color;
+			padding:25px;
+			text-decoration:none;
+		}
+	}
+
+	.intro {
+		width:80%;
+		margin-left:10%;
+		.brandText();
+
+		img {
+			border-radius: 20%;
+			max-width: 30%;
+			height:auto;
+		}
+
+	}
+
+	.lrstack {
+		display:flex;
+		justify-content: space-evenly;
+		width:80%;
+		margin-left:10%;
+		flex-wrap:wrap;
+		align-items:center;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	.skills {
+		.lrFlex();
+	}
+
+	.history {
+		.lrFlex();
+		padding-left:10px;
+	}
+
+	hr {
+		width:80%;
+	}
+
+	.contact {
+		width:20%;
+		margin-left:10%;
+		margin-top:20px;
+		margin-bottom:20px;  
+	}
+	
+		
+
+
+//end of container
+}
