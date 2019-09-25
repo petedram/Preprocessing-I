@@ -1,1 +1,217 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'EB Garamond', serif;
+}
+html,
+body {
+  height: 100%;
+}
+.brandText {
+  color: dodgerblue;
+}
+.lrFlex {
+  display: flex;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+  align-items: center;
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container h2 {
+  font-size: 2rem;
+}
+.container ul {
+  list-style-type: square;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.container .navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+.container .navigation a {
+  color: dodgerblue;
+  padding: 25px;
+  text-decoration: none;
+}
+.container .intro {
+  width: 80%;
+  margin-left: 10%;
+  color: dodgerblue;
+}
+.container .intro img {
+  border-radius: 20%;
+  max-width: 30%;
+  height: auto;
+}
+.container .lrstack {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-left: 10%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .skills {
+  display: flex;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+  align-items: center;
+}
+.container .history {
+  display: flex;
+  vertical-align: middle;
+  text-align: left;
+  width: 50%;
+  align-items: center;
+  padding-left: 10px;
+}
+.container hr {
+  width: 80%;
+}
+.container .contact {
+  width: 20%;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
