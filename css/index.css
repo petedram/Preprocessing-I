@@ -10,8 +10,6 @@ applet,
 object,
 iframe,
 h1,
-h2,
-h3,
 h4,
 h5,
 h6,
@@ -49,8 +47,6 @@ dl,
 dt,
 dd,
 ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -130,6 +126,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-family: 'EB Garamond', serif;
+}
 html,
 body {
   height: 100%;
@@ -142,18 +141,22 @@ body {
   vertical-align: middle;
   text-align: left;
   width: 50%;
+  align-items: center;
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container h2 {
+  font-size: 2rem;
+}
+.container ul {
+  list-style-type: square;
 }
 @media (max-width: 500px) {
   .container {
     width: 100%;
     padding: 20px;
   }
-}
-.container h1 {
-  font-size: 3rem;
-}
-.container h2 {
-  font: 2rem;
 }
 .container .navigation {
   display: flex;
@@ -193,12 +196,14 @@ body {
   vertical-align: middle;
   text-align: left;
   width: 50%;
+  align-items: center;
 }
 .container .history {
   display: flex;
   vertical-align: middle;
   text-align: left;
   width: 50%;
+  align-items: center;
   padding-left: 10px;
 }
 .container hr {
